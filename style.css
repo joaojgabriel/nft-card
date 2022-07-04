@@ -30,6 +30,7 @@ body {
   text-rendering: optimizeSpeed;
   font-size: 1.8rem;
   font-family: "Outfit", sans-serif;
+  background: var(--neutral-main-bg);
 }
 
 /* Make images easier to work with */
@@ -53,9 +54,38 @@ img {
 
 /* Colors */
 :root {
-    --primary-soft-blue: hsl(215, 51%, 70%);
-    --primary-cyan: hsl(178, 100%, 50%);
-    --neutral-main-bg: hsl(217, 54%, 11%);
-    --neutral-card-bg: hsl(216, 50%, 16%);
-    --neutral-line: hsl(215, 32%, 27%);
+  --primary-soft-blue: hsl(215, 51%, 70%);
+  --primary-cyan: hsl(178, 100%, 50%);
+  --neutral-main-bg: hsl(217, 54%, 11%);
+  --neutral-card-bg: hsl(216, 50%, 16%);
+  --neutral-line: hsl(215, 32%, 27%);
 }
+
+/* Typography */
+h1,
+.author_name {
+  color: white;
+}
+
+p,
+.time,
+.creation-of {
+  color: var(--primary-soft-blue);
+}
+
+.price {
+  color: var(--primary-cyan);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background: var(--neutral-card-bg);
+    width: 32.7rem;
+}
+
