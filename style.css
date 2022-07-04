@@ -76,16 +76,64 @@ p,
 .price {
   color: var(--primary-cyan);
 }
-
+/* Main and Card */
 main {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-    background: var(--neutral-card-bg);
-    width: 32.7rem;
+  background: var(--neutral-card-bg);
+  width: 32.7rem;
+  min-height: 54.2rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4.2rem 2.8rem rgba(0, 0, 0, 0.1);
 }
 
+/* Content */
+.card > * {
+  margin: 0 7%;
+}
+.ethereum {
+  max-width: 86%; /* 100% - (7% * 2) => 7% margin on both sides */
+  margin: 7%;
+  border-radius: 1.2rem;
+}
+
+.card h1 {
+  margin: 8% 7%;
+}
+
+.card p {
+  margin: 5% 7%;
+}
+
+.card div {
+  margin: 3% 7%;
+  display: flex;
+  align-items: center;
+}
+
+.information {
+  justify-content: space-between;
+}
+
+.price::before {
+  content: url(images/icon-ethereum.svg);
+}
+
+.time::before {
+  content: url(images/icon-clock.svg);
+}
+
+.author_avatar {
+  width: 3.2rem;
+  border: white;
+  margin-right: 4%;
+}
+
+.creation-of {
+  margin-right: 1.5%;
+}
