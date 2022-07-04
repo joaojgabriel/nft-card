@@ -139,6 +139,7 @@ main {
   margin: 3% 7%;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .information {
