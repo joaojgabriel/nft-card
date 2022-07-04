@@ -10,9 +10,11 @@ html {
 }
 
 /* Remove default margin */
-body,
-h1 p {
+*,
+*::after,
+*::before {
   margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -96,10 +98,26 @@ main {
 .card > * {
   margin: 0 7%;
 }
-.ethereum {
-  max-width: 86%; /* 100% - (7% * 2) => 7% margin on both sides */
+
+.img-wrapper {
+  position: relative;
   margin: 7%;
+}
+
+.ethereum {
+  max-width: 100%;
   border-radius: 1.2rem;
+}
+
+.img-wrapper:hover .overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  background: url(images/icon-view.svg) no-repeat center, rgba(0, 255, 247, 0.5) ;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.2rem;
+  cursor: pointer;
 }
 
 .card h1 {
@@ -110,7 +128,14 @@ main {
   margin: 5% 7%;
 }
 
-.card div {
+.card h1:hover,
+.card .author_name:hover {
+  color: var(--primary-cyan);
+  cursor: pointer;
+}
+
+.card .information,
+.card .author {
   margin: 3% 7%;
   display: flex;
   align-items: center;
