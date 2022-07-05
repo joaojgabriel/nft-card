@@ -122,6 +122,7 @@ main {
 
 .card h1 {
   margin: 8% 7%;
+  width: max-content;
 }
 
 .card p {
