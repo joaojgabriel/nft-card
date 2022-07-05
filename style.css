@@ -145,6 +145,11 @@ main {
 
 .information {
   justify-content: space-between;
+  }
+
+.price::before,
+.time::before {
+  vertical-align: middle;
 }
 
 .price::before {
