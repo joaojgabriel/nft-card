@@ -113,7 +113,7 @@ main {
   content: "";
   position: absolute;
   top: 0;
-  background: url(images/icon-view.svg) no-repeat center, rgba(0, 255, 247, 0.5) ;
+  background: url(images/icon-view.svg) no-repeat center, rgba(0, 255, 247, 0.5);
   height: 100%;
   width: 100%;
   border-radius: 1.2rem;
@@ -156,7 +156,7 @@ main {
 
 .author_avatar {
   width: 3.2rem;
-  border: white;
+  border: 1px solid white;
   margin-right: 4%;
 }
 
